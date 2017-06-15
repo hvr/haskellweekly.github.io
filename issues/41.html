@@ -1,0 +1,244 @@
+<!doctype html>
+
+<!-- \   Haskell
+    \/\/ Weekly -->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1, width = device-width">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@haskellweekly">
+    <meta name="twitter:title" content="Issue 41 :: Haskell Weekly">
+    <meta name="twitter:description" content="Issue 41 February 9 2017 Welcome to Haskell Weekly! Haskell is an advanced, purely functional programming language. This is a weekly summary of what’s going on in its community. You can subscribe">
+    <meta name="twitter:image" content="https://haskellweekly.news/images/twitter-card.png">
+    <meta name="og:image" content="https://haskellweekly.news/images/twitter-card.png">
+
+    <title>Issue 41 :: Haskell Weekly</title>
+
+    <style>body {
+  background: #ffffff;
+  color: #2e3436;
+  font: 20px/1.5em 'Verdana', sans-serif;
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 0.5em;
+}
+
+a {
+  border-bottom: thin solid;
+  color: #3465a4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #75507b;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+header h1 {
+  font: inherit;
+  font-size: 2em;
+  line-height: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+header a {
+  border: none;
+  color: #5c3566;
+  display: block;
+}
+
+header svg {
+  display: inline-block;
+  height: 1em;
+  vertical-align: baseline;
+  width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  header span {
+    display: none;
+  }
+}
+
+main article {
+  margin: 1.5em 0;
+}
+
+main h2 {
+  font: inherit;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+main time {
+  display: block;
+  font-style: italic;
+  margin-top: -1.5em;
+}
+
+main p {
+  margin: 1.5em 0;
+}
+
+main ul {
+  list-style-type: square;
+  margin: 1.5em 0;
+  padding: 0 0 0 1em;
+}
+
+main blockquote {
+  border-left: thin solid #d3d7cf;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+main aside {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0;
+}
+
+main form {
+  border: thin solid #d3d7cf;
+  display: flex;
+  line-height: 3em;
+  margin: 1.5em auto;
+  max-width: 20em;
+}
+
+main input {
+  border: none;
+  font: inherit;
+  padding: 0 0.5em;
+  width: 100%;
+  min-width: 0;
+}
+
+main button {
+  background: #3465a4;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0 0.5em;
+}
+
+footer {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0 3em 0;
+}
+</style>
+
+    <link href="../haskell-weekly.atom" rel="alternate" title="Haskell Weekly" type="application/atom+xml">
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../issues/41.html" rel="canonical">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="../">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 56.8">
+  <path fill="#ad7fa8" d="M75.8 28.4l-19 28.4H71l19-28.4zm-61.6 0l19 28.4H19L0 28.4z"></path>
+  <path fill="#5c3566" d="M19 56.8l19-28.4L19 0h14.2l38 56.8H56.8L45 39 33.2 57H19zm0 0"></path>
+</svg>
+
+          <span>
+            Haskell Weekly
+          </span>
+        </a>
+      </h1>
+    </header>
+
+    <main>
+      <article>
+  <h2>
+    Issue 41
+  </h2>
+
+  <time datetime="2017-02-09">
+    February 9 2017
+  </time>
+
+  <p>Welcome to Haskell Weekly! <a href="https://haskell-lang.org">Haskell</a> is an advanced, purely functional programming language. This is a weekly summary of what’s going on in its community. You can subscribe to <a href="https://news.us10.list-manage.com/subscribe?u=49a6a2e17b12be2c5c4dcb232&amp;id=ffbbbbd930">the email newsletter</a> or <a href="../haskell-weekly.atom">the Atom feed</a>.</p>
+<p>Want to contribute to Haskell Weekly? Send us a message <a href="https://twitter.com/haskellweekly">on Twitter</a> or open an issue <a href="https://github.com/haskellweekly/haskellweekly.github.io">on GitHub</a>.</p>
+<h2 id="news-from-the-haskell-community">News from the Haskell community</h2>
+<ul>
+<li><p><a href="https://www.herculus.io">Herculus beta: Purely function spreadsheets</a></p>
+<blockquote>
+<p>Build rock-solid tools in no time and focus on the things that matter.</p>
+</blockquote></li>
+<li><p><a href="https://www.joachim-breitner.de/blog/717-Why_prove_programs_equivalent_when_your_compiler_can_do_that_for_you_">Why prove programs equivalent when your compiler can do that for you?</a></p>
+<blockquote>
+<p>I proved all the laws, but I was very unhappy. I have a PhD on something about Haskell and theorem proving. I have worked with Isabelle, Agda and Coq. Both Haskell and theorem proving is decades old. And yet, I sit here, and tediously write manual proofs by hand. Is this really the best we can do?</p>
+</blockquote></li>
+<li><p><a href="https://www.fpcomplete.com/blog/2017/02/monadmask-vs-monadbracket">MonadMask vs MonadBracket</a></p>
+<blockquote>
+<p>This is a generalization of the <code>bracket</code> function. Importantly, it allows you to provide different cleanup functions for the success and failure cases. It also provides you with more information for cleanup, namely the exception that occured or the success value.</p>
+</blockquote></li>
+<li><p><a href="http://www.kovach.me/posts/2017-02-03-haskell-bits-application-beginnings.html">Haskell Bits #2: Application beginnings</a></p>
+<blockquote>
+<p>Are you comfortable creating data types, manipulating lists, composing functions, etc, but not sure how to make a “useful program” with Haskell? This is a very common stumbling block when learning. It might be the complaint I’ve heard the most.</p>
+</blockquote></li>
+<li><p><a href="https://np.reddit.com/r/haskell/comments/5s36m2/raspberry_pi_gpio_servant_api/">Raspberry Pi GPIO Servant API</a></p>
+<blockquote>
+<p>I’ve just finished up a first pass at a Stack-built Servant application to use wiringPi for Raspberry Pi GPIO control. This enables you to access your Pi’s GPIO pins over the web easily. It builds on the excellent wiringPi Hackage package and underlying C-lib.</p>
+</blockquote></li>
+<li><p><a href="https://andyshiue.github.io/functional/programming/2017/02/06/monad.html">Monads in category theory for laymen</a></p>
+<blockquote>
+<p>You should know there are 3 coherence laws since you knew what monads are, but they might seem like black magic for most of you. What I’m going to do is to show that those 3 laws are “obvious” in some sense without actually teaching you the whole category theory behind it.</p>
+</blockquote></li>
+</ul>
+<h2 id="package-of-the-week">Package of the week</h2>
+<p>This week’s package of the week is <a href="https://hackage.haskell.org/package/monad-metrics">monad-metrics</a>, a convenient wrapper around EKG metrics.</p>
+<p>Send us a message <a href="https://twitter.com/haskellweekly">on Twitter</a> to nominate next week’s package!</p>
+</article>
+
+<aside>
+  <p>
+    Did you enjoy this issue?
+    Subscribe now to get more like it delivered to your inbox every Thursday.
+  </p>
+
+  <form action="https://news.us10.list-manage.com/subscribe/post?u=49a6a2e17b12be2c5c4dcb232&amp;id=ffbbbbd930" method="post">
+  <div aria-hidden="true" style="position: absolute; left: -5000px;">
+    <input name="b_49a6a2e17b12be2c5c4dcb232_ffbbbbd930" tabindex="-1" type="text" value>
+  </div>
+
+  <input name="EMAIL" placeholder="you@example.com" type="email">
+
+  <button type="submit">
+    Subscribe
+  </button>
+</form>
+
+
+  <p>
+    It's easy to unsubscribe and we'll never send you spam.
+    If you'd prefer, you can follow us <a href="https://twitter.com/haskellweekly">on Twitter</a>
+    or subscribe to <a href="../haskell-weekly.atom">the feed</a>.
+  </p>
+</aside>
+
+    </main>
+
+    <footer>
+      <p>
+        Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+        The source code for this site is available <a href="https://github.com/haskellweekly/haskellweekly.github.io">on GitHub</a>.
+      </p>
+    </footer>
+
+    <script>window.ga = function () { ga.q.push(arguments) }
+ga.l = +new Date
+ga.q = [['create', 'UA-99854195-1', 'auto'], ['send', 'pageview']]
+</script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>

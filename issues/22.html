@@ -1,0 +1,239 @@
+<!doctype html>
+
+<!-- \   Haskell
+    \/\/ Weekly -->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1, width = device-width">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@haskellweekly">
+    <meta name="twitter:title" content="Issue 22 :: Haskell Weekly">
+    <meta name="twitter:description" content="Issue 22 September 29 2016 Simon Peyton Jones: Respect There’s no denying that our shared dialogue as a community has taken a nose-dive in the last few months. If this change of">
+    <meta name="twitter:image" content="https://haskellweekly.news/images/twitter-card.png">
+    <meta name="og:image" content="https://haskellweekly.news/images/twitter-card.png">
+
+    <title>Issue 22 :: Haskell Weekly</title>
+
+    <style>body {
+  background: #ffffff;
+  color: #2e3436;
+  font: 20px/1.5em 'Verdana', sans-serif;
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 0.5em;
+}
+
+a {
+  border-bottom: thin solid;
+  color: #3465a4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #75507b;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+header h1 {
+  font: inherit;
+  font-size: 2em;
+  line-height: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+header a {
+  border: none;
+  color: #5c3566;
+  display: block;
+}
+
+header svg {
+  display: inline-block;
+  height: 1em;
+  vertical-align: baseline;
+  width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  header span {
+    display: none;
+  }
+}
+
+main article {
+  margin: 1.5em 0;
+}
+
+main h2 {
+  font: inherit;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+main time {
+  display: block;
+  font-style: italic;
+  margin-top: -1.5em;
+}
+
+main p {
+  margin: 1.5em 0;
+}
+
+main ul {
+  list-style-type: square;
+  margin: 1.5em 0;
+  padding: 0 0 0 1em;
+}
+
+main blockquote {
+  border-left: thin solid #d3d7cf;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+main aside {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0;
+}
+
+main form {
+  border: thin solid #d3d7cf;
+  display: flex;
+  line-height: 3em;
+  margin: 1.5em auto;
+  max-width: 20em;
+}
+
+main input {
+  border: none;
+  font: inherit;
+  padding: 0 0.5em;
+  width: 100%;
+  min-width: 0;
+}
+
+main button {
+  background: #3465a4;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0 0.5em;
+}
+
+footer {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0 3em 0;
+}
+</style>
+
+    <link href="../haskell-weekly.atom" rel="alternate" title="Haskell Weekly" type="application/atom+xml">
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../issues/22.html" rel="canonical">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="../">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 56.8">
+  <path fill="#ad7fa8" d="M75.8 28.4l-19 28.4H71l19-28.4zm-61.6 0l19 28.4H19L0 28.4z"></path>
+  <path fill="#5c3566" d="M19 56.8l19-28.4L19 0h14.2l38 56.8H56.8L45 39 33.2 57H19zm0 0"></path>
+</svg>
+
+          <span>
+            Haskell Weekly
+          </span>
+        </a>
+      </h1>
+    </header>
+
+    <main>
+      <article>
+  <h2>
+    Issue 22
+  </h2>
+
+  <time datetime="2016-09-29">
+    September 29 2016
+  </time>
+
+  <ul>
+<li><p><a href="https://mail.haskell.org/pipermail/haskell/2016-September/024995.html">Simon Peyton Jones: Respect</a></p>
+<blockquote>
+<p>There’s no denying that our shared dialogue as a community has taken a nose-dive in the last few months. If this change of tone becomes established as a norm, I believe it will corrode our common life, perhaps permanently, and harm our shared purpose. I would be heartbroken if that happened.</p>
+</blockquote></li>
+<li><p><a href="http://degoes.net/articles/modern-fp-part-2">Modern functional programming: part 2</a></p>
+<blockquote>
+<p>The result is a sequel to my original post, which consists of a newly-minted, tricked-out recommendation for architecting modern functional programs, along with new ways of thinking about the structure of this architecture.</p>
+</blockquote></li>
+<li><p><a href="https://www.well-typed.com/blog/2016/09/sharing-conduit/">Sharing, memory leaks, and Conduit and friends</a></p>
+<blockquote>
+<p>Sharing conduit values leads to memory leaks. Make sure to disable the full laziness optimization in the module with your top-level calls to <code>runConduit</code> or (<code>$$</code>). Similar considerations apply to other streaming libraries and indeed any Haskell code that uses lazy data structures to drive computation.</p>
+</blockquote></li>
+<li><p><a href="https://wadler.blogspot.com/2016/09/lambdaman-supporting-bootstrap.html">Lambdaman shirt, supporting Bootstrap</a></p>
+<blockquote>
+<p>After watching talks or videos of Propositions as Types, folk ask me how they can get their own Lambdaman t-shirt. CustomInk has agreed to print the design as a Booster. Sign up now, order will be printed on October 15. Any profits go to Bootstrap, an organisation run by Shriram Krishnamurthi, Matthias Felleisen, and the PLT group that teaches functional programming to middle and high school students.</p>
+</blockquote></li>
+<li><p><a href="https://www.fpcomplete.com/blog/2016/09/updated-hackage-mirroring">Updated Hackage mirroring</a></p>
+<blockquote>
+<p>With the addition of the new hackage-security metadata files to our S3 mirror, one nice benefit is that the FP Complete mirror is now an official Hackage mirror, and can be used natively by cabal-install without having to modify any configuration files.</p>
+</blockquote></li>
+<li><p><a href="http://www.snoyman.com/blog/2016/09/proposed-conduit-reskin">Proposed Conduit reskin</a></p>
+<blockquote>
+<p>Conduit borrowed the operator syntax of <code>$$</code>, <code>=$</code> and <code>$=</code> from enumerator, and it made sense at the beginning of its lifecycle. However, for quite a while now conduit has evolved to the point of having a unified type for <code>Source</code>s, <code>Conduit</code>s, and <code>Sink</code>s, and the disparity of operators adds more confusion than it may be worth.</p>
+</blockquote></li>
+</ul>
+<p>Did you like this issue? Let us know <a href="https://twitter.com/haskellweekly">on Twitter</a>! Think it could be better? Send us <a href="info@haskellweekly.news">an email</a> or open <a href="https://github.com/haskellweekly/haskellweekly.github.io/issues/new">an issue</a>. Thanks for reading!</p>
+</article>
+
+<aside>
+  <p>
+    Did you enjoy this issue?
+    Subscribe now to get more like it delivered to your inbox every Thursday.
+  </p>
+
+  <form action="https://news.us10.list-manage.com/subscribe/post?u=49a6a2e17b12be2c5c4dcb232&amp;id=ffbbbbd930" method="post">
+  <div aria-hidden="true" style="position: absolute; left: -5000px;">
+    <input name="b_49a6a2e17b12be2c5c4dcb232_ffbbbbd930" tabindex="-1" type="text" value>
+  </div>
+
+  <input name="EMAIL" placeholder="you@example.com" type="email">
+
+  <button type="submit">
+    Subscribe
+  </button>
+</form>
+
+
+  <p>
+    It's easy to unsubscribe and we'll never send you spam.
+    If you'd prefer, you can follow us <a href="https://twitter.com/haskellweekly">on Twitter</a>
+    or subscribe to <a href="../haskell-weekly.atom">the feed</a>.
+  </p>
+</aside>
+
+    </main>
+
+    <footer>
+      <p>
+        Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+        The source code for this site is available <a href="https://github.com/haskellweekly/haskellweekly.github.io">on GitHub</a>.
+      </p>
+    </footer>
+
+    <script>window.ga = function () { ga.q.push(arguments) }
+ga.l = +new Date
+ga.q = [['create', 'UA-99854195-1', 'auto'], ['send', 'pageview']]
+</script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>

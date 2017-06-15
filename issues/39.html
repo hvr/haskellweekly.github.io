@@ -1,0 +1,248 @@
+<!doctype html>
+
+<!-- \   Haskell
+    \/\/ Weekly -->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1, width = device-width">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@haskellweekly">
+    <meta name="twitter:title" content="Issue 39 :: Haskell Weekly">
+    <meta name="twitter:description" content="Issue 39 January 26 2017 Welcome to Haskell Weekly! Haskell is an advanced, purely functional programming language. This is a weekly summary of what’s going on in its community. You can subscribe">
+    <meta name="twitter:image" content="https://haskellweekly.news/images/twitter-card.png">
+    <meta name="og:image" content="https://haskellweekly.news/images/twitter-card.png">
+
+    <title>Issue 39 :: Haskell Weekly</title>
+
+    <style>body {
+  background: #ffffff;
+  color: #2e3436;
+  font: 20px/1.5em 'Verdana', sans-serif;
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 0.5em;
+}
+
+a {
+  border-bottom: thin solid;
+  color: #3465a4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #75507b;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+header h1 {
+  font: inherit;
+  font-size: 2em;
+  line-height: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+header a {
+  border: none;
+  color: #5c3566;
+  display: block;
+}
+
+header svg {
+  display: inline-block;
+  height: 1em;
+  vertical-align: baseline;
+  width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  header span {
+    display: none;
+  }
+}
+
+main article {
+  margin: 1.5em 0;
+}
+
+main h2 {
+  font: inherit;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+main time {
+  display: block;
+  font-style: italic;
+  margin-top: -1.5em;
+}
+
+main p {
+  margin: 1.5em 0;
+}
+
+main ul {
+  list-style-type: square;
+  margin: 1.5em 0;
+  padding: 0 0 0 1em;
+}
+
+main blockquote {
+  border-left: thin solid #d3d7cf;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+main aside {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0;
+}
+
+main form {
+  border: thin solid #d3d7cf;
+  display: flex;
+  line-height: 3em;
+  margin: 1.5em auto;
+  max-width: 20em;
+}
+
+main input {
+  border: none;
+  font: inherit;
+  padding: 0 0.5em;
+  width: 100%;
+  min-width: 0;
+}
+
+main button {
+  background: #3465a4;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0 0.5em;
+}
+
+footer {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0 3em 0;
+}
+</style>
+
+    <link href="../haskell-weekly.atom" rel="alternate" title="Haskell Weekly" type="application/atom+xml">
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../issues/39.html" rel="canonical">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="../">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 56.8">
+  <path fill="#ad7fa8" d="M75.8 28.4l-19 28.4H71l19-28.4zm-61.6 0l19 28.4H19L0 28.4z"></path>
+  <path fill="#5c3566" d="M19 56.8l19-28.4L19 0h14.2l38 56.8H56.8L45 39 33.2 57H19zm0 0"></path>
+</svg>
+
+          <span>
+            Haskell Weekly
+          </span>
+        </a>
+      </h1>
+    </header>
+
+    <main>
+      <article>
+  <h2>
+    Issue 39
+  </h2>
+
+  <time datetime="2017-01-26">
+    January 26 2017
+  </time>
+
+  <p>Welcome to Haskell Weekly! <a href="https://haskell-lang.org">Haskell</a> is an advanced, purely functional programming language. This is a weekly summary of what’s going on in its community. You can subscribe to <a href="https://news.us10.list-manage.com/subscribe?u=49a6a2e17b12be2c5c4dcb232&amp;id=ffbbbbd930">the email newsletter</a> or <a href="../haskell-weekly.atom">the Atom feed</a>.</p>
+<p>Want to contribute to Haskell Weekly? Send us a message <a href="https://twitter.com/haskellweekly">on Twitter</a> or open an issue <a href="https://github.com/haskellweekly/haskellweekly.github.io">on GitHub</a>.</p>
+<h2 id="news-from-the-haskell-community">News from the Haskell community</h2>
+<ul>
+<li><p><a href="https://mail.haskell.org/pipermail/haskell-cafe/2017-January/126011.html">Haskell Platform 8.0.2</a></p>
+<blockquote>
+<p>On behalf of the Haskell Platform team, I’m happy to announce the release of Haskell Platform 8.0.2. This includes GHC 8.0.2, cabal-install 1.24.0.2, and stack 1.3.2, all with many bugfixes and improvements since the last platform release.</p>
+</blockquote></li>
+<li><p><a href="https://lwm.github.io/ghc-802-stackage-nightly-and-lts-update/">GHC 8.0.2 on Stackage Nightly. Here’s the LTS plan.</a></p>
+<blockquote>
+<p>GHC 8.0.2 has been released! A big congratulations to everyone who was involved. Accordingly, the Stackage curators teams has been quickly able to cut a new nightly release which supports GHC 8.0.2. Thanks to the efforts of the package authors and Stackage maintainers so far!</p>
+</blockquote></li>
+<li><p><a href="http://kseo.github.io//posts/2017-01-19-fun-with-hint.html">Fun with hint</a></p>
+<blockquote>
+<p>GHC allows us to compile and execute Haskell code dynamically through GHC API. The hint library provides a Haskell interpreter built on top of GHC API. It allows us to load and execute Haskell expressions and even coerce them into values.</p>
+</blockquote></li>
+<li><p><a href="https://simonmar.github.io/posts/2017-01-24-asynchronous-exceptions.html">Asynchronous exceptions in practice</a></p>
+<blockquote>
+<p>Asynchronous exceptions are a controversial feature of Haskell. You can throw an exception to another thread, at any time. So you have to be ready for an asynchronous exception to fire at any point in your code. Isn’t that a scary thought?</p>
+</blockquote></li>
+<li><p><a href="http://www.snoyman.com/blog/2017/01/stackage-design-choices">Stackage design choices: making Haskell curated package sets</a></p>
+<blockquote>
+<p>This post is going to talk about some of the design choices made over the years around the Stackage project, a curated package set for Haskell. While many of these points will be Haskell- and Stackage-specific, I think the ideas would translate well to other languages interested in created curated package sets.</p>
+</blockquote></li>
+<li><p><a href="https://e.xtendo.org/monad">The monad fear</a></p>
+<blockquote>
+<p>Just call them “IO action” or “IO type”, and explain they are similar to Unix commands, and there will be nothing more to teach. But we call them IO monads and cause this chaos. “How do I deal with a sequence of multiple numbers in Haskell?” “Use List.” No one replies with “Use the List monad” unless they’re pure evil!</p>
+</blockquote></li>
+<li><p><a href="https://pchiusano.github.io/2017-01-20/why-not-haskell.html">If Haskell is so great, why hasn’t it taken over the world? And the curious case of Go.</a></p>
+<blockquote>
+<p>The simplest explanation is probably that Haskell is not that much better than, say, Java, for many of the software systems people write today. Why might this be?</p>
+</blockquote></li>
+</ul>
+<h2 id="package-of-the-week">Package of the week</h2>
+<p>This week’s package of the week is <a href="https://hackage.haskell.org/package/fltkhs">fltkhs</a>, a complete binding to the FLTK GUI library.</p>
+<p>Send us a message <a href="https://twitter.com/haskellweekly">on Twitter</a> to nominate next week’s package!</p>
+</article>
+
+<aside>
+  <p>
+    Did you enjoy this issue?
+    Subscribe now to get more like it delivered to your inbox every Thursday.
+  </p>
+
+  <form action="https://news.us10.list-manage.com/subscribe/post?u=49a6a2e17b12be2c5c4dcb232&amp;id=ffbbbbd930" method="post">
+  <div aria-hidden="true" style="position: absolute; left: -5000px;">
+    <input name="b_49a6a2e17b12be2c5c4dcb232_ffbbbbd930" tabindex="-1" type="text" value>
+  </div>
+
+  <input name="EMAIL" placeholder="you@example.com" type="email">
+
+  <button type="submit">
+    Subscribe
+  </button>
+</form>
+
+
+  <p>
+    It's easy to unsubscribe and we'll never send you spam.
+    If you'd prefer, you can follow us <a href="https://twitter.com/haskellweekly">on Twitter</a>
+    or subscribe to <a href="../haskell-weekly.atom">the feed</a>.
+  </p>
+</aside>
+
+    </main>
+
+    <footer>
+      <p>
+        Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+        The source code for this site is available <a href="https://github.com/haskellweekly/haskellweekly.github.io">on GitHub</a>.
+      </p>
+    </footer>
+
+    <script>window.ga = function () { ga.q.push(arguments) }
+ga.l = +new Date
+ga.q = [['create', 'UA-99854195-1', 'auto'], ['send', 'pageview']]
+</script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>

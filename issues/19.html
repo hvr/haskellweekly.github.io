@@ -1,0 +1,238 @@
+<!doctype html>
+
+<!-- \   Haskell
+    \/\/ Weekly -->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1, width = device-width">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@haskellweekly">
+    <meta name="twitter:title" content="Issue 19 :: Haskell Weekly">
+    <meta name="twitter:description" content="Issue 19 September 8 2016 The Base of a String Theory for Haskell Backpack solves these problems, by allowing you to parametrize over a signature rather than a concrete implementation of a">
+    <meta name="twitter:image" content="https://haskellweekly.news/images/twitter-card.png">
+    <meta name="og:image" content="https://haskellweekly.news/images/twitter-card.png">
+
+    <title>Issue 19 :: Haskell Weekly</title>
+
+    <style>body {
+  background: #ffffff;
+  color: #2e3436;
+  font: 20px/1.5em 'Verdana', sans-serif;
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 0.5em;
+}
+
+a {
+  border-bottom: thin solid;
+  color: #3465a4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #75507b;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+header h1 {
+  font: inherit;
+  font-size: 2em;
+  line-height: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+header a {
+  border: none;
+  color: #5c3566;
+  display: block;
+}
+
+header svg {
+  display: inline-block;
+  height: 1em;
+  vertical-align: baseline;
+  width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  header span {
+    display: none;
+  }
+}
+
+main article {
+  margin: 1.5em 0;
+}
+
+main h2 {
+  font: inherit;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+main time {
+  display: block;
+  font-style: italic;
+  margin-top: -1.5em;
+}
+
+main p {
+  margin: 1.5em 0;
+}
+
+main ul {
+  list-style-type: square;
+  margin: 1.5em 0;
+  padding: 0 0 0 1em;
+}
+
+main blockquote {
+  border-left: thin solid #d3d7cf;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+main aside {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0;
+}
+
+main form {
+  border: thin solid #d3d7cf;
+  display: flex;
+  line-height: 3em;
+  margin: 1.5em auto;
+  max-width: 20em;
+}
+
+main input {
+  border: none;
+  font: inherit;
+  padding: 0 0.5em;
+  width: 100%;
+  min-width: 0;
+}
+
+main button {
+  background: #3465a4;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0 0.5em;
+}
+
+footer {
+  border-top: thin solid #d3d7cf;
+  margin: 1.5em 0 3em 0;
+}
+</style>
+
+    <link href="../haskell-weekly.atom" rel="alternate" title="Haskell Weekly" type="application/atom+xml">
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../issues/19.html" rel="canonical">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="../">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 56.8">
+  <path fill="#ad7fa8" d="M75.8 28.4l-19 28.4H71l19-28.4zm-61.6 0l19 28.4H19L0 28.4z"></path>
+  <path fill="#5c3566" d="M19 56.8l19-28.4L19 0h14.2l38 56.8H56.8L45 39 33.2 57H19zm0 0"></path>
+</svg>
+
+          <span>
+            Haskell Weekly
+          </span>
+        </a>
+      </h1>
+    </header>
+
+    <main>
+      <article>
+  <h2>
+    Issue 19
+  </h2>
+
+  <time datetime="2016-09-08">
+    September 8 2016
+  </time>
+
+  <ul>
+<li><p><a href="http://blog.ezyang.com/2016/09/the-base-of-a-string-theory-for-haskell/">The Base of a String Theory for Haskell</a></p>
+<blockquote>
+<p>Backpack solves these problems, by allowing you to parametrize over a signature rather than a concrete implementation of a string type, and instantiate such an indefinite library whenever you want.</p>
+</blockquote></li>
+<li><p><a href="http://bitemyapp.com//posts/2016-09-03-websocket-shootout-haskell.html">The Hashrocket websocket shootout in Haskell</a></p>
+<blockquote>
+<p>The idea is to test how many concurrent clients a single websocket server can serve and how efficiently it can broadcast messages to all the clients.</p>
+</blockquote></li>
+<li><p><a href="http://www.cs.nott.ac.uk/~pszgmh/pih.html">Programming in Haskell: 2nd Edition</a></p>
+<blockquote>
+<p>This book is based on the author’s experience of teaching Haskell for more than twenty years. All concepts are explained from first principles and no programming experience is required, making this book accessible to a broad spectrum of readers.</p>
+</blockquote></li>
+<li><p><a href="https://www.well-typed.com/blog/2016/09/haskell-exchange-hackathon-and-courses/">Haskell eXchange, Hackathon, and Courses</a></p>
+<blockquote>
+<p>In October 2016, we are co-organizing various events in London. Now is the time to register for: the Haskell eXchange, a two-day three-track conference with a large number of Haskell-related talks and workshops on a wide variety of topics, including keynotes by Simon Peyton Jones, Don Stewart, Conor McBride and Graham Hutton.</p>
+</blockquote></li>
+<li><p><a href="https://learnyouanelm.github.io">Learn You an Elm</a></p>
+<blockquote>
+<p>I decided to write this because Learn You A Haskell is now a common resource for learning functional programming. But, Elm is developing into its own language, and has some significant technical and philosophical differences from Haskell. So, instead of throwing away the great resource that is LYAH, we’ve decided to adapt it.</p>
+</blockquote></li>
+<li><p><a href="https://np.reddit.com/r/haskell/comments/516htg/learning_haskell_as_a_category_theorist/">Learning Haskell as a Category theorist</a></p>
+<blockquote>
+<p>The way Haskell uses the words Functor and Monad don’t correspond to how I know them and furthermore, the explanations given often leave me even more confused because they are aimed at a different audience.</p>
+</blockquote></li>
+</ul>
+</article>
+
+<aside>
+  <p>
+    Did you enjoy this issue?
+    Subscribe now to get more like it delivered to your inbox every Thursday.
+  </p>
+
+  <form action="https://news.us10.list-manage.com/subscribe/post?u=49a6a2e17b12be2c5c4dcb232&amp;id=ffbbbbd930" method="post">
+  <div aria-hidden="true" style="position: absolute; left: -5000px;">
+    <input name="b_49a6a2e17b12be2c5c4dcb232_ffbbbbd930" tabindex="-1" type="text" value>
+  </div>
+
+  <input name="EMAIL" placeholder="you@example.com" type="email">
+
+  <button type="submit">
+    Subscribe
+  </button>
+</form>
+
+
+  <p>
+    It's easy to unsubscribe and we'll never send you spam.
+    If you'd prefer, you can follow us <a href="https://twitter.com/haskellweekly">on Twitter</a>
+    or subscribe to <a href="../haskell-weekly.atom">the feed</a>.
+  </p>
+</aside>
+
+    </main>
+
+    <footer>
+      <p>
+        Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+        The source code for this site is available <a href="https://github.com/haskellweekly/haskellweekly.github.io">on GitHub</a>.
+      </p>
+    </footer>
+
+    <script>window.ga = function () { ga.q.push(arguments) }
+ga.l = +new Date
+ga.q = [['create', 'UA-99854195-1', 'auto'], ['send', 'pageview']]
+</script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>
